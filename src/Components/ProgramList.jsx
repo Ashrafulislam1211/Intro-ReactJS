@@ -553,6 +553,12 @@ const App = () => {
                 >
                   Buy Now
                 </button>
+               <button
+                  style={buyBtnStyle}
+                  onClick={() => handleBuyNow(fullViewProgram)} // Simulate buy now
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
