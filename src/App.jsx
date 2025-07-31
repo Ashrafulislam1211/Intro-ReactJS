@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
 import MyFirstComponent from './Components/MyFirstComponent'
 import Map from './Components/Map'
 import ControlledInput from './Components/ControlledInput'
@@ -10,6 +10,7 @@ import ProgramList from './Components/ProgramList'
 import Carousel from './Components/Carousel'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Route, Routes } from 'react-router-dom'
+import Leadership from './Components/leadership'
 
 
 
@@ -19,13 +20,16 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/leaderships" element={<leadership></leadership>}></Route>
+      <Route path="/" element={<Home></Home>}></Route>
+
+      <Route path="/top-leaderships" element={<Leadership></Leadership>}></Route>
+
     {/* <MyFirstComponent></MyFirstComponent> */}
     {/* <Map></Map> */}
     {/* <ControlledInput></ControlledInput> */}
     {/* <SideEffect></SideEffect> */}
-    <Carousel></Carousel>
-    <ProgramList></ProgramList>
+    {/* <Carousel></Carousel>
+    <ProgramList></ProgramList> */}
     </Routes>
     
   )

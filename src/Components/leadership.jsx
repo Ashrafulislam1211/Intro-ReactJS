@@ -1,9 +1,9 @@
 import React from 'react'
 
-const leadership = () => {
+const Leadership = () => {
   return (
     <div>It is a simple leadership page</div>
   )
 }
 
-export default leadership
+export default Leadership
