@@ -1,0 +1,28 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "Zannatul",
+            "email": "zannatul123@gmail.com",
+            "website": "zannatul.com"
+        }, 
+         {
+            "id": 2,
+            "name": "Habiba",
+            "email": "habiba123@gmail.com",
+            "website": "habiba.com"
+        },
+         {
+            "id": 3,
+            "name": "sydur",
+            "email": "sydur123@gmail.com",
+            "website": "sydur.com"
+        },
+         {
+            "id": 4,
+            "name": "Farah",
+            "email": "farah123@gmail.com",
+            "website": "farah.com"
+        }
+    ]
+}

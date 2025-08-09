@@ -1,8 +1,12 @@
 import React from 'react'
+import Navigation from './Navigation'
 
 const Leadership = () => {
   return (
-    <div>It is a simple leadership page</div>
+    <div> 
+       <Navigation />
+        It is a simple leadership page
+        </div>
   )
 }
 

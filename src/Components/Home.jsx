@@ -1,13 +1,12 @@
-const home = () => {
+import Navigation from "./Navigation";
+
+const Home = () => {
   return (
     <div>
-        <ul>
-            <li>Home</li>
-            <li>Leadership</li>
-        </ul>
+       <Navigation />
         This is home page
     </div>
   )
 }
 
-export default home;
+export default Home;

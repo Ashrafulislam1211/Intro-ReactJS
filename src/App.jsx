@@ -11,6 +11,8 @@ import Carousel from './Components/Carousel'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Route, Routes } from 'react-router-dom'
 import Leadership from './Components/leadership'
+import Home from './Components/home'
+import Navigation from './Components/Navigation'
 
 
 
@@ -20,13 +22,13 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/" element={<Home />}></Route>
 
       <Route path="/top-leaderships" element={<Leadership></Leadership>}></Route>
 
+    {/* <ControlledInput></Controll
     {/* <MyFirstComponent></MyFirstComponent> */}
     {/* <Map></Map> */}
-    {/* <ControlledInput></ControlledInput> */}
     {/* <SideEffect></SideEffect> */}
     {/* <Carousel></Carousel>
     <ProgramList></ProgramList> */}
