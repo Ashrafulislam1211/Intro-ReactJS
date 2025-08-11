@@ -13,6 +13,7 @@ import { Route, Routes } from 'react-router-dom'
 import Leadership from './Components/leadership'
 import Home from './Components/home'
 import Navigation from './Components/Navigation'
+import People from './Components/people'
 
 
 
@@ -25,7 +26,7 @@ function App() {
       <Route path="/" element={<Home />}></Route>
 
       <Route path="/top-leaderships" element={<Leadership></Leadership>}></Route>
-
+      <Route path="/people" element={<People />} />
     {/* <ControlledInput></Controll
     {/* <MyFirstComponent></MyFirstComponent> */}
     {/* <Map></Map> */}
