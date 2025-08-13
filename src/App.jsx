@@ -14,6 +14,7 @@ import Leadership from './Components/leadership'
 import Home from './Components/home'
 import Navigation from './Components/Navigation'
 import People from './Components/people'
+import SingleUser from './Components/singleUser'
 
 
 
@@ -27,6 +28,7 @@ function App() {
 
       <Route path="/top-leaderships" element={<Leadership></Leadership>}></Route>
       <Route path="/people" element={<People />} />
+      <Route path="/user/:id" element={<SingleUser></SingleUser>} />
     {/* <ControlledInput></Controll
     {/* <MyFirstComponent></MyFirstComponent> */}
     {/* <Map></Map> */}
