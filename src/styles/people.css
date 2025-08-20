@@ -1,63 +1,90 @@
-/* App css */
+/* App.css */
 
 .app {
   font-family: Arial, sans-serif;
-  padding: 200px;
-  background-color:white; /* dark background like screenshot */
-}
-
-.nav {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.nav h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 .user-list {
+  list-style: none;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* smaller card */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.user-item {
+  margin-bottom: 20px;
 }
 
 .user-link {
-  background: gray; /* full card white */
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;  /* stack image, name, email vertically */
+  align-items: center;     /* center everything */
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
 }
 
 .user-link:hover {
-  transform: translateY(-5px);
+ background-color: #e0e0e0;
 }
 
-.user-info img {
+.user-avatar {
+  width: 50px;   /* smaller avatar */
+  height: 50px;  /* smaller avatar */
+  margin-bottom: 8px; /* tighter spacing */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-avatar img {
   width: 100%;
-  height: auto;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-  
+  height: 100%;
+  object-fit: contain; /* prevent zoom-in look */
 }
 
-.user-info img:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* shadow on hover */
-}
 
 .user-name {
+  margin: 5px 0 0;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 10px;
-  color: white; /* black text */
 }
 
-.user-email {
-  font-size: 0.85rem;
-  color: white; /* black text */
-  margin-top: 4px;
+.user-username {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-detail-title {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.user-detail-avatar img {
+  width: 150px;   /* keep detail page larger than list */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain; /* avoid zoomed-in face */
+  margin-bottom: 10px;
+}
+
+
+.user-detail-info {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
 }
