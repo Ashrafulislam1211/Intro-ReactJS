@@ -15,7 +15,7 @@ const People = () => {
                     <div key={user.id} className="user-link">
                         <Link to={`/user/${user.id}`}>
                        <div className="user-info">
-                        <div className="user-info">
+                        <div className="user-info-img">
                             <img src={user.image} alt={user.name} />
                         </div>
                          <h3 className="user-name">{user.name}</h3>

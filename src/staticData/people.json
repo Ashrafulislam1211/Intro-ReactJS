@@ -16,7 +16,7 @@
         },
         {
             "id": 3,
-            "name": "sydur",
+            "name": "Sydur",
             "email": "sydur123@gmail.com",
             "website": "sydur.com",
             "image": "https://icon-library.com/images/user-icon/user-icon-7.jpg"
@@ -26,6 +26,20 @@
             "name": "Farah",
             "email": "farah123@gmail.com",
             "website": "farah.com",
+            "image": "https://icon-library.com/images/user-icon/user-icon-7.jpg"
+        }, 
+        {
+            "id": 5,
+            "name": "Zayan",
+            "email": "zayan123@gmail.com",
+            "website": "zayan.com",
+            "image": "https://icon-library.com/images/user-icon/user-icon-7.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Mohammed",
+            "email": "Mohammed123@gmail.com",
+            "website": "mohammed.com",
             "image": "https://icon-library.com/images/user-icon/user-icon-7.jpg"
         }
     ]
