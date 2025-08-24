@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* even padding on all sides */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 
@@ -17,6 +19,7 @@
   grid-template-columns: repeat(3, 220px);       
   gap: 20px; /* space between cards */
   justify-items: center;
+  /* align-items: center; */
 
 }
 
@@ -47,6 +50,7 @@
 }
 
 /* ✅ Small avatar for list view */
+
 .user-avatar {
   width: 80px;
   height: 80px;
@@ -55,10 +59,19 @@
   overflow: hidden;
 }
 
+.user-detail-content {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+  justify-content: center;    
+  gap: 20px;
+}
+
+
 .user-avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills circle properly */
+  object-fit: cover; 
 }
 
 /* ✅ Name & username */
@@ -79,7 +92,7 @@
   text-align: center;
 }
 
-/* ✅ Larger avatar for detail page */
+
 .user-detail-avatar {
   width: 150px;
   height: 150px;
@@ -94,7 +107,7 @@
   object-fit: cover;
 }
 
-/* ✅ Info avatar (same size as detail) */
+
 .user-info-img {
   width: 150px;
   height: 150px;
@@ -116,4 +129,21 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   max-width: 400px;
+  color: #333;
 }
+
+.user-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.user-detail-title {
+ text-align: center;
+ margin: 0;
+}
+

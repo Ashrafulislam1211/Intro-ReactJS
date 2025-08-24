@@ -18,40 +18,34 @@ const SingleUser = () => {
 
   }, [id]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("/people");
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     navigate("/people");
+  //   }, 5000);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
 
   return (
     <div>
       <Navigation></Navigation>
-      <h1 className='user-detail-title'>Single Profile Information</h1>
-      {user && (
-        <div className='user-detail-content'>
-        <div className="user-detail-avatar">
-          <img src={user.image} alt={user.name} />
-        </div>
-        <div className="singleUser-detail-info">
-          <p>
-            <strong>Name:</strong> {user.name}
-          </p>
-          <p>
-            <strong>Email:</strong> {user.email}
-          </p>
-          <p>
-            <strong>Phone:</strong> {user.phone}
-          </p>
-          <p>
-            <strong>Website:</strong> <a href={user.website}>{user.website}</a>
-          </p>
-        </div>
+  <div className="user-detail-wrapper">
+  <h1 className="user-detail-title">Single Profile Information</h1>
+  {user && (
+    <div className="user-detail-content">
+      <div className="user-detail-avatar">
+        <img src={user.image} alt={user.name} />
       </div>
-    )}
+      <div className="user-detail-info">
+        <p><strong>Name:</strong> {user.name}</p>
+        <p><strong>Email:</strong> {user.email}</p>
+        <p><strong>Phone:</strong> {user.phone}</p>
+        <p><strong>Website:</strong> <a href={user.website}>{user.website}</a></p>
+      </div>
+    </div>
+  )}
+</div>
     </div>
 
   );
