@@ -15,6 +15,7 @@ import Home from './Components/home'
 import Navigation from './Components/Navigation'
 import People from './Components/people'
 import SingleUser from './Components/singleUser'
+import UsingAxios from './Components/UsingAxios'
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Route path="/top-leaderships" element={<Leadership></Leadership>}></Route>
       <Route path="/people" element={<People />} />
       <Route path="/user/:id" element={<SingleUser></SingleUser>} />
+      <Route path="/axios" element={<UsingAxios></UsingAxios>} />
     {/* <ControlledInput></Controll
     {/* <MyFirstComponent></MyFirstComponent> */}
     {/* <Map></Map> */}
