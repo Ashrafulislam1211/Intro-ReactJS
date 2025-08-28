@@ -1,0 +1,157 @@
+
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  padding: 20px;
+  
+
+
+
+.user-list {
+  list-style: none;
+  padding: 10px;
+  margin: 50px;
+  display: grid;    
+  grid-template-columns: repeat(2, 1fr);       
+  gap: 15px; 
+  justify-items: center;
+  align-items: center;
+
+  @include smMaxBreakPoint {
+     grid-template-columns: repeat(2, 1fr);       
+     gap: 15px; 
+
+  }
+
+
+  
+.user-item {
+  margin-bottom: 20px;
+}
+
+.user-link {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+
+
+  
+.user-link:hover {
+  background-color: gray;
+}
+
+/* ✅ Small avatar for list view */
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-detail-content {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+  justify-content: center;    
+  gap: 20px;
+}
+
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* ✅ Name & username */
+.user-name {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.user-username {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.user-details {
+  text-align: center;
+}
+
+
+.user-detail-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.user-detail-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.user-info-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.user-info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-detail-info {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+  color: #333;
+}
+
+.user-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.user-detail-title {
+ text-align: center;
+ margin: 0;
+}
+}
+
+}
+
+}
